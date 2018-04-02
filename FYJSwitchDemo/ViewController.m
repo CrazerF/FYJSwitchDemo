@@ -8,6 +8,10 @@
 
 #import "ViewController.h"
 
+#import "YJSwitch.h"
+
+#import "FYJSwitch.h"
+
 @interface ViewController ()
 
 @end
@@ -16,13 +20,30 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    //第一种
+    YJSwitch *yjSwitch = [[YJSwitch alloc] initWithFrame:CGRectMake(150, 100, 100, 40)];
+    yjSwitch.on = 1;
+    [yjSwitch addTarget:self action:@selector(switchAction:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:yjSwitch];
+    
+    //第二种
+    FYJSwitch *fyjSwitch = [[FYJSwitch alloc] initWithFrame:CGRectMake(150, 200, 100, 40)];
+    fyjSwitch.on = 1;
+    [fyjSwitch addTarget:self action:@selector(action:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:fyjSwitch];
 }
 
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)switchAction:(YJSwitch *)sender
+{
+    NSLog(@"yjSwitch.on = %d",sender.on);
+}
+
+- (void)action:(UIControl *)sender
+{
+    FYJSwitch *fyjSwitch = (FYJSwitch *)sender;
+    NSLog(@"fyjSwitch.on = %d",fyjSwitch.on);
 }
 
 

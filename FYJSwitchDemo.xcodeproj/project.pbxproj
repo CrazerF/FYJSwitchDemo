@@ -13,6 +13,10 @@
 		BCB315A91FD5210500D113D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCB315A81FD5210500D113D7 /* Assets.xcassets */; };
 		BCB315AC1FD5210500D113D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCB315AA1FD5210500D113D7 /* LaunchScreen.storyboard */; };
 		BCB315AF1FD5210500D113D7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB315AE1FD5210500D113D7 /* main.m */; };
+		BCE01B3C1FDE274B009509BB /* YJSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE01B3B1FDE274B009509BB /* YJSwitch.m */; };
+		BCE01B3F1FDE2784009509BB /* YJDrawHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE01B3E1FDE2784009509BB /* YJDrawHelper.m */; };
+		BCE01B451FDE2BE4009509BB /* FYJSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE01B421FDE2BE4009509BB /* FYJSwitch.m */; };
+		BCE01B481FDE65BC009509BB /* FYJDrawHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE01B471FDE65BC009509BB /* FYJDrawHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,14 @@
 		BCB315AB1FD5210500D113D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BCB315AD1FD5210500D113D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BCB315AE1FD5210500D113D7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BCE01B3A1FDE274B009509BB /* YJSwitch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJSwitch.h; sourceTree = "<group>"; };
+		BCE01B3B1FDE274B009509BB /* YJSwitch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJSwitch.m; sourceTree = "<group>"; };
+		BCE01B3D1FDE2784009509BB /* YJDrawHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJDrawHelper.h; sourceTree = "<group>"; };
+		BCE01B3E1FDE2784009509BB /* YJDrawHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJDrawHelper.m; sourceTree = "<group>"; };
+		BCE01B411FDE2BE4009509BB /* FYJSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYJSwitch.h; sourceTree = "<group>"; };
+		BCE01B421FDE2BE4009509BB /* FYJSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYJSwitch.m; sourceTree = "<group>"; };
+		BCE01B461FDE65BC009509BB /* FYJDrawHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYJDrawHelper.h; sourceTree = "<group>"; };
+		BCE01B471FDE65BC009509BB /* FYJDrawHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYJDrawHelper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,8 @@
 		BCB3159E1FD5210500D113D7 /* FYJSwitchDemo */ = {
 			isa = PBXGroup;
 			children = (
+				BCE01B391FDE2323009509BB /* YJSwitch */,
+				BCB315B81FD5218B00D113D7 /* FYJSwitch */,
 				BCB3159F1FD5210500D113D7 /* AppDelegate.h */,
 				BCB315A01FD5210500D113D7 /* AppDelegate.m */,
 				BCB315A21FD5210500D113D7 /* ViewController.h */,
@@ -69,6 +83,28 @@
 				BCB315AE1FD5210500D113D7 /* main.m */,
 			);
 			path = FYJSwitchDemo;
+			sourceTree = "<group>";
+		};
+		BCB315B81FD5218B00D113D7 /* FYJSwitch */ = {
+			isa = PBXGroup;
+			children = (
+				BCE01B411FDE2BE4009509BB /* FYJSwitch.h */,
+				BCE01B421FDE2BE4009509BB /* FYJSwitch.m */,
+				BCE01B461FDE65BC009509BB /* FYJDrawHelper.h */,
+				BCE01B471FDE65BC009509BB /* FYJDrawHelper.m */,
+			);
+			path = FYJSwitch;
+			sourceTree = "<group>";
+		};
+		BCE01B391FDE2323009509BB /* YJSwitch */ = {
+			isa = PBXGroup;
+			children = (
+				BCE01B3A1FDE274B009509BB /* YJSwitch.h */,
+				BCE01B3B1FDE274B009509BB /* YJSwitch.m */,
+				BCE01B3D1FDE2784009509BB /* YJDrawHelper.h */,
+				BCE01B3E1FDE2784009509BB /* YJDrawHelper.m */,
+			);
+			path = YJSwitch;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,8 +178,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCE01B481FDE65BC009509BB /* FYJDrawHelper.m in Sources */,
 				BCB315A41FD5210500D113D7 /* ViewController.m in Sources */,
+				BCE01B451FDE2BE4009509BB /* FYJSwitch.m in Sources */,
+				BCE01B3F1FDE2784009509BB /* YJDrawHelper.m in Sources */,
 				BCB315AF1FD5210500D113D7 /* main.m in Sources */,
+				BCE01B3C1FDE274B009509BB /* YJSwitch.m in Sources */,
 				BCB315A11FD5210500D113D7 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
